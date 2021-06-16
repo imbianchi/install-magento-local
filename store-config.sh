@@ -62,7 +62,7 @@ echo "Running bistwobis configs..."
 ./bin/magento config:set web/secure/use_in_frontend 1 &&
 ./bin/magento config:set web/secure/use_in_adminhtml 1
 
-./bin/magento setup:store-config:set --base-url="http://$STOREURL/"
-./bin/magento setup:store-config:set --base-url-secure="https://$STOREURL/"
+./bin/magento setup:store-config:set --base-url="http://$STORENAME.loc/"
+./bin/magento setup:store-config:set --base-url-secure="https://$STORENAME.loc/"
 ./bin/magento setup:upgrade
 ./bin/magento setup:di:compile
