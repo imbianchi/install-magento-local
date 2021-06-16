@@ -3,7 +3,7 @@
 echo "Running admin configs..."
 
 # Set information configs store
-./bin/magento setup:install \
+php bin/magento setup:install \
         --db-host=mysql \
         --db-name=$STORENAME \
         --db-user=root \
