@@ -20,6 +20,7 @@ export STORENAME
 export STOREURL
 export DBPSWD
 export DBNAME
+export GITREPO
 
 bash ./create-project.sh
 bash ./store-config.sh
