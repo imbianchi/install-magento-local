@@ -2,6 +2,6 @@
 
 mkdir -p ./$STORENAME/htdocs
 cd $STORENAME/htdocs
-sudo -H -u www-data bash -c "git clone $GITREPO ."
-sudo -H -u www-data bash -c "git checkout $GITBRANCH -f"
-sudo -H -u www-data bash -c "composer install"
+sudo -u www-data bash -c "git clone $GITREPO ."
+sudo -u www-data bash -c "git checkout $GITBRANCH -f"
+composer install
