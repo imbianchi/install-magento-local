@@ -13,6 +13,9 @@ read GITREPO
 echo -n "DB name: "
 read DBNAME
 
+echo -n "DB user: "
+read DBUSER
+
 echo -n "DB password: "
 read DBPSWD
 
@@ -20,6 +23,7 @@ export STORENAME
 export STOREURL
 export DBPSWD
 export DBNAME
+export DBUSER
 export GITREPO
 
 bash ./create-project.sh
