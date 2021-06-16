@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 cd /shared/httpd/
-mkdir $STORENAME
-cd $STORENAME
-sudo -u www-data bash -c "git clone $GITREPO htdocs/"
-sudo -u www-data bash -c "git checkout $GITBRANCH -f"
-sudo -H -u www-data bash -c "composer install"
+sudo mkdir -p $STORENAME/htdocs
+cd $STORENAME/htdocs
+sudo bash -c "git clone $GITREPO"
+sudo bash -c "git checkout $GITBRANCH -f"
+sudo bash -c "composer install"
