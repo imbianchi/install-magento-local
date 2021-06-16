@@ -16,6 +16,8 @@ read DBUSER
 echo -n "DB password: "
 read DBPSWD
 
+echo "$DBPSWD"
+
 export STORENAME
 export DBPSWD
 export DBNAME

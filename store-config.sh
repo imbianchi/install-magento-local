@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 cd /shared/httpd/$STORENAME/htdocs/
 echo "Running admin configs..."
-
+echo "$DBPSWD"
+echo "$DBPSWD"
+echo "$DBPSWD"
+echo "$DBPSWD"
+echo "$DBPSWD"
 # Set information configs store
 ./bin/magento setup:install \
         --db-host=mysql \
