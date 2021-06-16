@@ -2,18 +2,17 @@
 cd /shared/httpd/$STORENAME/htdocs/
 echo "Running admin configs..."
 # Set information configs store
-./bin/magento setup:install \
-        --db-host=mysql \
-        --db-name="$DBNAME" \
-        --db-user="$DBUSER" \
-        --db-password="$DBPSWD" \
-        --admin-firstname=Suporte \
-        --admin-lastname=Bis2bis \
-        --admin-email=suporte@bis2bis.com.br \
-        --admin-user=admin \
-        --admin-password=admin \
-        --backend-frontname=admin \
-    --cleanup-database
+./bin/magento setup:install &&
+./bin/magento setup:install db-host=mysql &&
+./bin/magento setup:install db-name="$DBNAME" &&
+./bin/magento setup:install db-user="$DBUSER" &&
+./bin/magento setup:install db-password="$DBPSWD" &&
+./bin/magento setup:install admin-firstname=Suporte &&
+./bin/magento setup:install admin-lastname=Bis2bis &&
+./bin/magento setup:install admin-email=suporte@bis2bis.com.br &&
+./bin/magento setup:install admin-user=admin &&
+./bin/magento setup:install admin-password=admin &&
+./bin/magento setup:install backend-frontname=admin
 
 echo "Running bistwobis configs..."
 ./bin/magento config:set admin/dashboard/enable_charts 1 &&
