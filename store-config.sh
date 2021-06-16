@@ -5,14 +5,14 @@ echo "Running admin configs..."
 # Set information configs store
 php bin/magento setup:install \
         --db-host=mysql \
-        --db-name=$STORENAME \
-        --db-user=root \
+        --db-name=$DBNAME \
+        --db-user=$DBUSER \
         --db-password=$DBPSWD \
         --admin-firstname=Suporte \
         --admin-lastname=Bis2bis \
         --admin-email=suporte@bis2bis.com.br \
-        --admin-user=bis2bis \
-        --admin-password=admin123 \
+        --admin-user=admin \
+        --admin-password=admin \
         --backend-frontname=admin \
     --cleanup-database
 
