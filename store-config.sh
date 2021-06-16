@@ -1,17 +1,12 @@
 #!/usr/bin/env bash
 cd /shared/httpd/$STORENAME/htdocs/
 echo "Running admin configs..."
-echo "$DBPSWD"
-echo "$DBPSWD"
-echo "$DBPSWD"
-echo "$DBPSWD"
-echo "$DBPSWD"
 # Set information configs store
 ./bin/magento setup:install \
         --db-host=mysql \
-        --db-name=$DBNAME \
-        --db-user=$DBUSER \
-        --db-password=$DBPSWD \
+        --db-name="$DBNAME" \
+        --db-user="$DBUSER" \
+        --db-password="$DBPSWD" \
         --admin-firstname=Suporte \
         --admin-lastname=Bis2bis \
         --admin-email=suporte@bis2bis.com.br \
