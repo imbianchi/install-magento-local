@@ -26,5 +26,5 @@ export DBNAME
 export DBUSER
 export GITREPO
 
-bash ./create-project.sh
-bash ./store-config.sh
+bash /shared/httpd/install-magento-local/create-project.sh
+bash /shared/httpd/install-magento-local/store-config.sh
